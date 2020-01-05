@@ -1,0 +1,144 @@
+*{
+  /*border: solid 1px black;*/
+  font-family: 微軟正黑體;
+}
+body{
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  background-color: #0d3a4a;
+  color: rgba(255,255,255,0.85);
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 1px;
+}
+.resume{
+  display: flex;
+  max-width: 950px;
+  border: solid 6px white;
+  position: relative;
+}
+.left, .right{
+  padding: 15px;
+}
+.left{
+  flex: 5;
+}
+.right{
+  flex: 5;
+  padding-top: 150px;
+}
+ul{
+  padding: 0px;
+  list-style: none;
+}
+a{
+  color: rgba(255,255,255,0.85)
+}
+h2{
+  margin: 0px;
+  margin-bottom: 25px;
+}
+h2::after{
+  content:"";
+  display: inline-block;
+  width: 20px;
+  height: 8px;
+  background-color: #81def0;
+  margin-left: 10px;
+}
+h4{
+  margin: 0px;
+  margin-top: 40px;
+}
+p{
+  text-align: justify;
+}
+.year li{
+  padding-left: 10px;
+  border-left: solid 4px #81def0;
+  margin-left: 20px;
+}
+hr{
+  background-color: #81def0;
+  border: 0px;
+  height: 5px;
+  width: 50%;
+  display: relative;
+  margin-left: 0px;
+}
+.decoration{
+  width: 300px;
+  height: 140px;
+  background: linear-gradient(135deg,#1FF,#FFF);
+  border-radius: 70px 0px 0px 70px;
+  position:absolute;
+  right: 0px;
+  top: 50px;
+}
+.circle{
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255,255,255,0.3);
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+.circle::after{
+  content:"";
+  display: block;
+  background-color: #0d3a4a;
+  width: calc(100% - 20px);
+  height:calc(100% - 20px);
+  border-radius: 50%;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.p90,.p180,.p270,.p360{
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  background-color: #81def0;
+}
+.p180{
+  left: 50%;
+  top:50%;
+}
+.p270{
+  left: 0;
+  top: 50%;
+}
+.p360{
+  left: 0;
+  top: 0;
+}
+.test{
+  display: inline-block;
+}
+.listLicense .bar{
+   width: 70%;
+  height: 10px;
+  border: solid 2px #81def0;
+  border-radius: 5px;
+}
+.value{
+  height: 100%;
+  width: 60%;
+  background-color: #81def0;
+}
+.value.p70{
+  width: 70%;
+}
+.value.p80{
+  width: 80%;
+}
+.value.p90{
+  width: 90%;
+}
+.value.p100{
+  width: 100%;
+}
